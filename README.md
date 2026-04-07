@@ -7,9 +7,7 @@
 | | |
 |---|---|
 | **Frontend** | `https://donationmatch.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/donationmatch` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CCVTAYVAOHPHENQG7QUE5VEPC63ZVXFTUVM6EB4QU7CJ3WUDTJZXZAX2` |
 
 ## How It Works
 
