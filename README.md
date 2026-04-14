@@ -6,8 +6,8 @@
 
 | | |
 |---|---|
-| **Frontend** | `https://donationmatch.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CCVTAYVAOHPHENQG7QUE5VEPC63ZVXFTUVM6EB4QU7CJ3WUDTJZXZAX2` |
+| **Frontend** | `https://donationmatch-app.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CDCEFOCJPSPB7BUNOOITJAO6DSU75T5V6H4HY325QKX42ASBNOIHSNLN` |
 
 ## How It Works
 
@@ -18,6 +18,16 @@
 5. Pool depletes over time — status changes from `Active` → `Exhausted`
 6. Matcher can close at any time to reclaim unused pool
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -46,3 +56,6 @@ count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
+
